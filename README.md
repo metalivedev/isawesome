@@ -10,3 +10,6 @@ Just add ``?AWESOME=(your name)`` to the URL once, and the service will make you
 
 Actually, this is just a ridiculous example of simple Nginx configuration for cookies and proxies.
 Apologies to www.chucknorrisfacts.com for abusing their awesomeness.
+
+Depends on nginx sub_filter module, which you must compile-in explicitly.
+See http://wiki.nginx.org/HttpSubModule#sub_filter
