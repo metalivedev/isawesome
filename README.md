@@ -12,4 +12,7 @@ Actually, this is just a ridiculous example of simple Nginx configuration for co
 Apologies to www.chucknorrisfacts.com for abusing their awesomeness.
 
 Depends on nginx sub_filter module, which you must compile-in explicitly.
-See http://wiki.nginx.org/HttpSubModule#sub_filter
+See http://wiki.nginx.org/HttpSubModule#sub_filter for information about the filter, 
+and the [top of that page](http://wiki.nginx.org/HttpSubModule) for instructions on how to include the module in the configuration.
+**HttpSubModule is not included by default** (see list of [optional NGinx modules](http://wiki.nginx.org/Modules#Optional_HTTP_modules) 
+where it is listed as `Substitution`.)
