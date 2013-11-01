@@ -12,6 +12,14 @@ RUN cd src/$NGINXVERSION && make install
 # This is the port nginx listens to by default
 EXPOSE 80
 
+# With ENTRYPOINT and CMD we can shorten this:
+# docker run -p 80 -name isawesomecontainer -d isawesomeimage /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/container.conf
+# to this:
+# docker run -p 80 -name isawesomecontainer -d isawesomeimage
+# (Assuming you named this image "isawesomeimage")
+
+ENTRYPOINT ["/usr/local/nginx/sbin/nginx"]
+CMD ["-c", "/usr/local/nginx/conf/container.conf"]
+
 ADD nginx.conf /usr/local/nginx/conf/dotcloud.conf
 ADD container.conf /usr/local/nginx/conf/
-
