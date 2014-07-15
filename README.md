@@ -2,7 +2,7 @@ isawesome
 =========
 
 What if everything they said about Chuck Norris was about you instead?
-How awesome would that be?
+How awesome would that be? Awesome!
 
 Try pushing this dotCloud example to your own dotCloud service.
 When you've read how awesome Hipache is, you can switch to your own name.
