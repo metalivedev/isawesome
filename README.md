@@ -38,5 +38,3 @@ dotcloud create isawesome
 dotcloud push
 dotcloud open
 ```
-
-teeny change.
